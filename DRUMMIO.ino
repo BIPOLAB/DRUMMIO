@@ -40,7 +40,7 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 //*** NOTICE *** peakValue and velocity must be zero.
 //*** NOTICE *** Except for the notes, the hi-hat should have the same value for open and close.
 
-int SNARE[6]       = {150, 953, 38, 3, 0, 0};
+int SNARE[6]       = {150, 958, 38, 3, 0, 0};
 int SNARE_RIM[6]   = {5, 500, 37, 3 , 0, 0}; 
 int HIHAT[6]       = {100, 800, 46, 1, 0, 0};     
 int HIHAT_CLOSE[6] = {100, 800, 42, 1, 0, 0};
