@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drumio Editor</title>
+
+    <link rel="stylesheet" href="./src/css/pads.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/midimonitor.css">
+    <link rel="stylesheet" href="./src/css/dropdown.css">
+    <link rel="stylesheet" href="./src/css/customlist.css">
+    <!-- Importa Font Awesome -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+        /* Estilo para el círculo que simula el LED */
+        /* Estilo para el círculo que simula el LED */
+
+
+        html,
+        body {
+
+            margin: auto;
+            padding-bottom: 10px;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Para ocultar barras de desplazamiento */
+            box-sizing: border-box;
+            /* Incluye bordes y relleno en la altura y anchura */
+            background: #212534;
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenido de tu aplicación -->
+    <div class="container">
+        <div class="brand-wrap">
+            <h1>DRUMMIO</h1>
+            <div id="led"></div>
+        </div>
+
+        <div class="drum-machine">
+            <div id='drumwrap'>
+
+
+                <div class="drum-pad" onClick={this.handleClick}>A</div>
+                <div class="drum-pad">B</div>
+                <div class="drum-pad">C</div>
+                <div class="drum-pad">D</div>
+
+            </div>
+
+            <div class="config-container">
+                <p>Note</p>
+                <div class="counter" min="5" max="5" step="0.5"></div>
+                <div class="custom-list">
+                    <input type="text" id="listInput" readonly>
+                    <div class="arrow-buttons">
+                        <button id="decrementButton" class="btn btn-secondary btn-arrow">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <button id="incrementButton" class="btn btn-secondary btn-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bs-example container" data-example-id="striped-table">
+            <table id="midiMonitor" class="table table-striped table-bordered table-hover">
+                <caption>Bootstrap Table CSS Demo</caption>
+                <thead>
+                    <tr>
+                        <th>CH</th>
+                        <th>Note</th>
+                        <th>Value</th>
+                        <th>Status
+                        </th>
+
+
+
+                    </tr>
+                </thead>
+                <tbody id="midiMonitorBody">
+                    <!-- Las filas se llenarán con datos dinámicamente desde el script -->
+                </tbody>
+                <tfoot>
+                    <tr class="note">
+                        <th>Source</th>
+                        <td colspan=3>dispositivo =</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+
+    </div>
+
+
+    <!-- <div id="display-section">
+        <div id="screen">
+            <div className="text-area">
+                <section className="section">
+                    <h2 id="display">DISPLAY</h2>
+                </section>
+                <section className="section">
+                    <p className="text-code-small vol left">Volume: {Math.round(this.state.volumeVal*100)}%</p>
+                    <p className="text-code-small mode right">Mode: {this.state.soundMode}</p>
+                </section>
+            </div>
+        </div>
+
+        <div id="bank-switch">
+            {this.state.power? activeSwitch : inactiveSwitch }
+            <audio ref={ref=> this.audio = ref} id="btn-audio"
+                src="https://res.cloudinary.com/dzsmdyknz/video/upload/v1532597915/sample-swap/switches/switch-it-on2.mp3"
+                class="btn-audio-efx"></audio>
+        </div>
+    </div>-->
+
+
+
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+    <script src="./src/js/renderer.js"></script>
+    <script src="./src/js/pads.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/noteList.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.fontawesome.com/js/releases/latest/all.js" crossorigin="anonymous"></script>
+
+    <script>
+        const rootElement = document.getElementById('root');
+        ReactDOM.render(<Pad />, rootElement);
+    </script>
+    <script>
+        const dropdownButton = document.getElementById('dropdownMenuButton');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        // Resto del código JavaScript...
+    </script>
+</body>
+
+</html>

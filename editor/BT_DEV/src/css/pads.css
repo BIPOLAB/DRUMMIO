@@ -1,0 +1,135 @@
+@import 'colors.css';
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+ 
+.drum-machine{
+  width: auto;
+  height: auto;
+  background-color: green;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+ 
+}
+
+
+#drumwrap{
+  display: grid;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+  grid-template-rows: repeat(2, 1fr); /* 2 filas de igual tamaño */
+  gap: 10px; /* Separación entre celdas */
+  justify-items: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-color: aliceblue;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.drum-pad{
+  display: flex;
+  width: 250px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgba(0,0,0,0.6);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+  border: 2px outset rgba(255,255,255,0.125);
+  cursor: pointer;
+}
+.drum-pad:first-child{
+  background: var(--midnight-blue);
+}
+.drum-pad:hover:first-child{
+  background: var(--turquoise);
+  box-shadow: 0px 0px 3px var(--turquoise);
+  -webkit-box-shadow: 0px 0px 3px var(--turquoise);
+}
+
+.drum-pad:nth-child(2n){
+  background: var(--silver);
+}
+
+.drum-pad:hover:nth-child(2n){
+  background: var(--turquoise);
+  box-shadow: 0px 0px 3px var(--turquoise);
+  -webkit-box-shadow: 0px 0px 3px var(--turquoise);
+}
+
+.drum-pad:nth-child(3n){
+  background: var(--turquoise);
+}
+.drum-pad:hover:nth-child(3n){
+  background: var(--sunflower);
+  box-shadow: 0px 0px 3px var(--turquoise);
+  -webkit-box-shadow: 0px 0px 3px var(--turquoise);
+}
+.drum-pad:nth-child(4n){
+  background: var(--sunflower);
+}
+
+ 
+  .drum-pad::before {
+    
+    content: "";
+    width: 252px; /*var(--card-width);*/
+    height: 152px; /*var(--card-height);*/
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      /*left: -2%;*/
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .drum-pad::after {
+    position: relative;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.2);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+  }

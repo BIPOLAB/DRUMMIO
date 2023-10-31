@@ -1,0 +1,23 @@
+:root {
+    /* FLAT UI COLORS */
+    --belize-hole: #2980b9;  /* hsl(204, 64%, 44%) or rgb(41, 128, 185) */
+    --peter-river: #3498db;  /* hsl(204, 70%, 53%) or rgb(52, 152, 219) */
+    --nephritis: #27ae60;  /* hsl(145, 63%, 42%) or rgb(39, 174, 96) */
+    --emerald: #2ecc71;  /* hsl(145,63%,49%) or rgb(46,204,113) */
+    --green-sea: #16a085;  /* hsl(168,76%,36%) or rgb(22,160,133) */
+    --turquoise: #1abc9c;  /* hsl(168,76%,42%) or rgb(26,188,156) */
+    --pomegranate: #c0392b;  /* hsl(6, 63% ,46%) or rgb(192, 57, 43) */
+    --alizarin: #e74c3c;  /* hsl(6, 78%, 57%) or rgb(231, 76, 60) */
+    --pumpkin: #d35400;  /* hsl(24, 100%, 41%) or rgb(211, 84, 0) */
+    --carrot: #e67e22;  /* hsl(28, 80%, 52%) or rgb(230, 126, 34) */
+    --orange: #f39c12;  /* hsl(37, 90%, 51%) or rgb(243, 156, 18) */
+    --sunflower: #f1c40f;  /* hsl(48, 89%, 50%) or rgb(241, 196, 15) */
+    --midnight-blue: #2c3e50;  /* hsl(210, 29%, 24%) or rgb(44, 62, 80) */
+    --wet-asphalt:#34495e;  /* hsl(210°, 29%, 29%) or rgb(52, 73, 94) */
+    --silver: #bdc3c7;  /* hsl(204, 8%, 76%) or rgb(189, 195, 199) */
+    --clouds: #ecf0f1;  /* hsl(192, 15%, 94%) or rgb(236, 240, 241) */
+    --asbestos: #7f8c8d;  /* hsl(184, 6%, 53%) or rgb(127, 140, 141) */
+    --concrete: #95a5a6;  /* hsl(184, 9%, 62%) or rgb(149, 165, 166) */
+    --wisteria: #8e44ad;  /* hsl(282, 44%, 47%) or rgb(142, 68, 173) */
+    --amethyst: #9b59b6;  /* hsl(283, 39%, 53%) or rgb(155, 89, 182) */
+}
