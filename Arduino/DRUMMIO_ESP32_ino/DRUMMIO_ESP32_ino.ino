@@ -19,7 +19,7 @@
 
 //DEFINE NEOPIXELS QTY
 #define NUMPIXELS 8
-//DEFINE MUX PINS
+//DEFINE MUX PINS //
 #define MUXS0 12   // MUX S0
 #define MUXS1 14   // MUX S1
 #define MUXS2 27   // MUX S2
