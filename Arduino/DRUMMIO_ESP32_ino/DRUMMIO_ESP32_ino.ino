@@ -18,7 +18,7 @@
 #define LCD_LINES 2
 
 //DEFINE NEOPIXELS QTY
-#define NUMPIXELS 8
+#define NUMPIXELS 8 //
 //DEFINE MUX PINS
 #define MUXS0 12   // MUX S0
 #define MUXS1 14   // MUX S1
