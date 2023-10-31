@@ -1,0 +1,7 @@
+.box {
+    width: 250px; /* Ancho de los boxes */
+    height: 150px; /* Altura de los boxes */
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px; /* Separación entre recuadros */
+  }

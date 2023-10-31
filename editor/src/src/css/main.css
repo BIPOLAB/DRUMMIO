@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: red; /* Color de fondo rojo */
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100vw; /* 100% del ancho de la ventana */
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centrar los elementos en la grilla */
+    font-family: 'Teko', sans-serif;
+    
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas de igual tamaño */
+    gap: 2px; /* Separación entre celdas */
+    justify-items: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
