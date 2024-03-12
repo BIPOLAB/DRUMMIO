@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drumio Editor</title>
+
+    <link rel="stylesheet" href="./src/css/pads.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/midimonitor.css">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+        /* Estilo para el círculo que simula el LED  */
+        /* Estilo para el círculo que simula el LED */
+        #led {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #6a747e;
+            /* Inicialmente en rojo */
+            transition: background-color 0.5s ease-in-out;
+            /* Transición suave */
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-color: #514B44;
+            /* Color de fondo rojo */
+            height: 100vh;
+            /* 100% de la altura de la ventana */
+            width: 100vw;
+            /* 100% del ancho de la ventana */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenido de tu aplicación -->
+
+    <div class="container">
+        <h1 class="pro-title">DRUMMIO</h1>
+        <div class="grid-container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <div id="led"></div>
+    <table id="midiMonitor">
+        <thead>
+            <tr>
+                <th>CH</th>
+                <th>Tipo de mensaje</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="midiMonitorBody">
+            <!-- Las filas se llenarán con datos dinámicamente desde el script -->
+        </tbody>
+    </table>
+
+    <script src="./src/js/renderer.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

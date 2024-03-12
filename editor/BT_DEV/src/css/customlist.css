@@ -1,0 +1,14 @@
+.custom-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-list input {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .arrow-buttons .btn {
+    margin: 5px;
+  }
+  

@@ -1,0 +1,23 @@
+.custom-dropdown .btn {
+    text-align: left;
+    width: 100%;
+    position: relative;
+    padding-right: 30px; /* Ajuste para dejar espacio al ícono */
+  }
+  
+  .custom-dropdown .btn .fa-chevron-down {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .arrow-buttons {
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+  }
+  
+  .arrow-buttons .btn {
+    margin: 5px 0;
+  }
+  
+  

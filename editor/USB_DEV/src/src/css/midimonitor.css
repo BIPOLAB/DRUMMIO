@@ -1,0 +1,22 @@
+/* Estilo para la tabla del monitor MIDI */
+#midiMonitor {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #midiMonitor th, #midiMonitor td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #midiMonitor th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para las filas de datos */
+  #midiMonitor tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }

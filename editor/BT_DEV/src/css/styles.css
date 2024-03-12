@@ -1,0 +1,14 @@
+/* Estilo para el botón de toggle */
+#toggleButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+  }
+  
+  /* Estilo para la tabla */
+  #tableContainer {
+    display: block;
+    margin-top: 50px; /* Ajusta según sea necesario */
+  }
+  
