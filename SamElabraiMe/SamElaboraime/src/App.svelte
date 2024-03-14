@@ -1,6 +1,9 @@
 <script lang="ts">
 	export let name: string;
+	import SearchBar from "./components/TopMenu/SearchBar.svelte"
 </script>
+
+<SearchBar />
 
 <main>
 	<h1>Hello {name}!</h1>
